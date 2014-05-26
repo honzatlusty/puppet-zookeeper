@@ -52,10 +52,6 @@ class zookeeper(
     before  => Anchor['zookeeper::end'],
   } ->
 
-  #class { 'zookeeper::cleanup':
-  #  require => Anchor['zookeeper::start'],
-  #  before  => Anchor['zookeeper::end'],
-  #} ->
 
   class { 'zookeeper::config':
     require => Anchor['zookeeper::start'],

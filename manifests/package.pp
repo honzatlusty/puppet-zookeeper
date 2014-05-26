@@ -7,8 +7,6 @@ class zookeeper::package inherits zookeeper::params {
 
 
 
-  # spec file for zookeeper rpm can be found at https://github.com/skottler/zookeeper-rpms
-  # currently 20140521   nc is a missing dependency in the specfile
 
 
   package { 'zookeeper':
