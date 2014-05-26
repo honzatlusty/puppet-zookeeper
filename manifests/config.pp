@@ -80,7 +80,7 @@ class zookeeper::config(
   }
 
   if $manage_firewall {
-    firewall { '100 allow zookeeper:$client_port':
+    firewall { "100 allow zookeeper:$client_port":
       proto   => 'tcp',
       state   => ['NEW'],
       dport   => $client_port,
