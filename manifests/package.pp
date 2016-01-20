@@ -13,9 +13,10 @@ class zookeeper::package inherits zookeeper::params {
     ensure => $version,
   }
 
-  package {'nc':
-    ensure => present,
-  }
+### don't install nc
+#  package {'nc':
+#    ensure => present,
+#  }
 
 
 

@@ -62,7 +62,8 @@ class zookeeper(
     ensure  => 'running',
     require => [
       Anchor['zookeeper::start'],
-      Class['java'],
+#### don't depend on java class ###
+#      Class['java'],
       Class['zookeeper::config']
     ],
     before  => Anchor['zookeeper::end'],

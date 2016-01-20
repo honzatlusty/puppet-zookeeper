@@ -1,5 +1,5 @@
 class zookeeper::params {
-  $version           = '3.4.5-1'
+  $version           = '3.4.7-1'
   $download_url_base = 'http://apache.mirror3.ip-only.net/zookeeper'
 
   $myid        = hiera('myid', '1')
@@ -18,7 +18,7 @@ class zookeeper::params {
   $group       = 'zookeeper'
 
   # what servers are in the cluster
-  $servers     = ['']
+  $servers     = [''app01.dev.mundosalsa.eu:2888:3888', 'app02.dev.mundosalsa.eu:2888:3888', 'app03.dev.mundosalsa.eu:2888:3888'']
 
   # log4j properties
   $heap_size             = 1000
