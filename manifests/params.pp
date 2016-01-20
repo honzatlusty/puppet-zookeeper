@@ -18,7 +18,7 @@ class zookeeper::params {
   $group       = 'zookeeper'
 
   # what servers are in the cluster
-  $servers     = [''app01.dev.mundosalsa.eu:2888:3888', 'app02.dev.mundosalsa.eu:2888:3888', 'app03.dev.mundosalsa.eu:2888:3888'']
+  $servers     = ['app01.dev.mundosalsa.eu:2888:3888', 'app02.dev.mundosalsa.eu:2888:3888', 'app03.dev.mundosalsa.eu:2888:3888']
 
   # log4j properties
   $heap_size             = 1000
