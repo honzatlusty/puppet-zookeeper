@@ -4,6 +4,9 @@
 
 # Format is "<default threshold> (, <appender>)+
 
+zookeeper.root.logger=TRACE, CONSOLE, ROLLINGFILE, TRACEFILE
+zookeeper.log.dir=/var/log/zookeeper
+
 log4j.rootLogger=${zookeeper.root.logger}
 
 # Example: console appender only
