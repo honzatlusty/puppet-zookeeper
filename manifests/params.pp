@@ -18,11 +18,14 @@ class zookeeper::params {
   $group       = 'zookeeper'
 
   # what servers are in the cluster
-  $servers     = ['app01.dev.mundosalsa.eu:2888:3888', 'app02.dev.mundosalsa.eu:2888:3888', 'app03.dev.mundosalsa.eu:2888:3888']
+  $servers     = ['']
 
   # log4j properties
   $heap_size             = 1000
   $log4j_prop            = 'INFO,ROLLINGFILE'
   $rollingfile_threshold = 'INFO'
   $tracefile_threshold   = 'TRACE'
+
+  # custom cfg:
+  $custom_cfg = {}
 }

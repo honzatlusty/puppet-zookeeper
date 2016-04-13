@@ -18,6 +18,7 @@ class zookeeper(
   $group           = $zookeeper::params::group,
   $log4j_prop      = $zookeeper::params::log4j_prop,
   $servers         = $zookeeper::params::servers,
+  $custom_cfg      = $zookeeper::params::custom_cfg,
   $manage_firewall = hiera('manage_firewall', false),
   $myid
   # env FACTER_ZK_MYID=44 facter --puppet zk_myid

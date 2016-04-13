@@ -24,6 +24,7 @@ class zookeeper::config(
   $servers         = $zookeeper::servers
   $client_port     = $zookeeper::client_port
   $manage_firewall = $zookeeper::manage_firewall
+  $custom_cfg      = $zookeeper::custom_cfg
 
   file { "${log_dir}":
     owner  => $user,

@@ -60,3 +60,8 @@ snapCount=<%= @snap_count %>
 # read throughput the leader can be configured to not accept clients and focus
 # on coordination.
 #leaderServes=yes
+
+# Configuration from the custom_cfg hash
+<% @custom_cfg.each do |key,value| -%>
+<%= key -%>=<%= value %>
+<% end -%>
